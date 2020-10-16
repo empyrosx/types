@@ -1119,7 +1119,7 @@ describe('Types/_collection/RecordSet', () => {
 
             const recordSet = new RecordSet();
 
-            recordSet.append([record]);
+            recordSet.append([record, record]);
 
             assert.isTrue(recordSet.at(0).getFormat().isEqual(record.getFormat()));
         });
